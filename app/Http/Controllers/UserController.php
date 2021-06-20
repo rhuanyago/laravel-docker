@@ -13,7 +13,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        return view('welcome', ['nome' => 'Rhuan']);
+        return view('welcome', ['nome' => 'Rhuan', 'idade' => '22']);
     }
 
     /**

@@ -17,7 +17,6 @@ class ProductController extends Controller
     {
 
         $products = DB::table('product')->get();
-
         
         return view('product', [
             'nameProduct' => 'Limão',

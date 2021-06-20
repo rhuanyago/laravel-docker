@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class ProductController extends Controller
 {
@@ -13,10 +15,15 @@ class ProductController extends Controller
      */
     public function index()
     {
+
+        $products = DB::table('product')->get();
+
+        
         return view('product', [
             'nameProduct' => 'Limão',
             'price' => 'R$ 2,50',
-            'color' => 'green'
+            'color' => 'green',
+            'products' => $products
         ]);
     }
 

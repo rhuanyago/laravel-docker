@@ -1,3 +1,7 @@
+Laravel + Docker + React
+
+I'm learning, give me a discount :).
+
 Enter laradock folder
 
 copy the .env.example file to .env

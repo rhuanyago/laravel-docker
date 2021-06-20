@@ -13,7 +13,11 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view('product');
+        return view('product', [
+            'nameProduct' => 'Limão',
+            'price' => 'R$ 2,50',
+            'color' => 'green'
+        ]);
     }
 
     /**
